@@ -21,6 +21,16 @@ decodeMorse = function(morseCode){
   return morseCode.trim().split('   ').map(decodeMorseWord).join(' ');
 }
 
+var decodeMorse = function(morseCode){
+    var a = morseCode.trim().split("   ").map(function(word){
+      x = word.split(" ").map(function(letter){
+        return MORSE_CODE[letter]
+      }).join("")
+      return x
+    }).join(" ")
+    return a
+}
+
 decodeMorse = function(morseCode){
   return morseCode.trim().split(' ').map(a => MORSE_CODE[a] || ' ').join('').replace(/\s+/g, ' ');
 }
