@@ -8,8 +8,7 @@ function operator(a, b, token){
   }
 }
 
-function calc(expr) {
-  if (expr.length == 0) return 0;
+function calc(expr) {  
   var stack = [];
   expr.split(' ').forEach(function(token){
     if (!isFinite(token)){
@@ -17,7 +16,7 @@ function calc(expr) {
     }else
       stack.push(parseFloat(token));
   });
-  return stack.pop();
+  return stack.pop() || 0;
 }
 
 /*
