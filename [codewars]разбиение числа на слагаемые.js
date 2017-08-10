@@ -33,7 +33,7 @@ function makeArray(arr, l){
   return result;  
 }
 
-function next(arr, l){
+function next(arr, l){  // поиск следующей цифры, т.е 5и0 4и1 3и2 3и1и1...
   var i = l-1;
   var sum=0;
  
@@ -50,7 +50,7 @@ function next(arr, l){
   return l;
 }
 
-function partitions(n){
+function partitions(n){  //создание массивов [5,0], [4,1], [3,2], [3,1,1]
   var array = {}, subarr = [], arr = [], l = n;
   for(var ind = 0; ind < n; ind++) arr[ind] = 1;
   
@@ -102,5 +102,3 @@ function part(n) {
 */
 
 alert (part(5));  // "Range: 5 Average: 3.50 Median: 3.50"
-
-
