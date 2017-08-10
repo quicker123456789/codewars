@@ -48,7 +48,7 @@ function getPINs(observed){
           return candidate + item;
         });
       } else return candidate;
-    }).join(',').split(',');  //костыль, нужен, чтобы кандадат прибавлялся не в начале массива, а в начале строки
+    }).join(',').split(',');  //костыль, нужен, чтобы кандидат прибавлялся не в начале массива, а в начале строки
     
   }
 
@@ -88,7 +88,7 @@ function getPINs(observed) {
       }, []);
     }, ['']);
 }
-
+//----------------------------------------------------------------------------------
 function getPINs(observed) {
   return observed.split('')
   .map( t => ({
@@ -105,7 +105,7 @@ function getPINs(observed) {
   }[t]))
   .reduce((pre, cur)=> [].concat.apply([], pre.map(t => cur.map(g => t + g))));
 }
-
+//----------------------------------------------------------------------------------
 function mixNMatch(add, addTo) {
   var out = [];
   add.forEach(function(v, i) {addTo.forEach(function(w, j) {out.push(v + w);});});
