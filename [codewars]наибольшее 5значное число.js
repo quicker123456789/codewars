@@ -27,3 +27,7 @@ function solution(digits){
 */
 
 alert(largest(1236549879874645)); //98798
+
+/*
+parovoz = это .match(/.{1,5}/g) или substr(0, 5)
+*/
