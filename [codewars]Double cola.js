@@ -7,6 +7,14 @@ function whoIsNext(queue, n){
     i++;
   }
   return queue;//[queue.length-1];*/
+
+  /*
+  while(r>base) {
+    r-=4;
+    r=Math.floor(r/2);
+  }
+  return names[Math.ceil(r)-1];*/
+
   var base = queue.length;  
   while(n>=base){
   	n -= base;
