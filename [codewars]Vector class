@@ -1,7 +1,3 @@
-/*function Vector(array){
-  this.array = array;
-  this.N = array.length;
-}
 class Vector{
   constructor(array){
     this.array = array;
